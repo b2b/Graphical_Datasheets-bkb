@@ -1,13 +1,8 @@
-# Graphical_Datasheets-bkb
-Graphical Datasheets &amp; PINMAPS for MCU documentations 
-
+# Graphical Datasheets
 2017 modified version of Sparkfun Graphical Datasheets
-
- added groups of shapes
- 
- added groups of text
- 
- added group of row Header
+added groups of shapes
+added groups of text
+added group of row Header
 
 
 Code, final versions, and information on the Sparkfun Graphical Datasheets
