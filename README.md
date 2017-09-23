@@ -19,7 +19,7 @@ https://github.com/b2b/Graphical_Datasheets-bkb/archive/master.zip
 cd [downloaded Directory]/Graphical_Datasheets-master
 python bkb_tagscript.py
 ```
-Enter file name minus .csv extension (eg. ESP8266/Thing):
+**Enter file name minus .csv extension (eg. ESP8266/Thing):**
 ```
 Datasheets/ATMEL2560/ATMEL2560-16AU
 ```
