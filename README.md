@@ -8,7 +8,7 @@ download and install svgwrite
 https://bitbucket.org/mozman/svgwrite/downloads/
 
 cd [downloaded Directory]/svgwrite-1.1.9
-python setup.py install
+# python setup.py install
 
 # Step 2
 download and extract bkb_tagscript.py
