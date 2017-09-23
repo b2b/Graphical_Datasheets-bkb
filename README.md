@@ -23,8 +23,11 @@ Datasheets/ATMEL2560/ATMEL2560-16AU
 
 
 2017 modified version of Sparkfun Graphical Datasheets
+
 added groups of shapes
+
 added groups of text
+
 added group of row Header
 
 
