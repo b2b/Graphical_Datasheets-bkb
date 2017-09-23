@@ -34,7 +34,7 @@ added groups of text
 
 added group of row Header
 
-**[svgwrite doc](]http://svgwrite.readthedocs.io/en/master/overview.html)**
+[svgwrite doc](http://svgwrite.readthedocs.io/en/master/overview.html)
 
 
 This repo includes the Python script used to help generate the graphical datasheets.  It also includes the final .svg, and .pdf files as well as the .csv files use.  The .csv files were used as a starting point and some text did change between the file and the final version.  There is also a User Submitted folder for external contributions.
