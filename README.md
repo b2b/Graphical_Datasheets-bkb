@@ -6,23 +6,27 @@ Python script used to help generate the graphical datasheets.
 # Step 1
 download and install svgwrite
 https://bitbucket.org/mozman/svgwrite/downloads/
-
+```
 cd [downloaded Directory]/svgwrite-1.1.9
-
 python setup.py install
+```
 
 # Step 2
 download and extract bkb_tagscript.py
 https://github.com/b2b/Graphical_Datasheets-bkb/archive/master.zip
 
+```
 cd [downloaded Directory]/Graphical_Datasheets-master
-
-# python bkb_tagscript.py
-
+python bkb_tagscript.py
+```
+Enter file name minus .csv extension (eg. ESP8266/Thing):
+```
 Datasheets/ATMEL2560/ATMEL2560-16AU
+```
+End of File, the output is located at Datasheets/ATMEL2560/ATMEL2560-16AU.svg
 
 
-2017 modified version of Sparkfun Graphical Datasheets
+2017.09.23 modified version of Sparkfun Graphical Datasheets
 
 added groups of shapes
 
