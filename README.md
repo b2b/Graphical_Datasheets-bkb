@@ -3,20 +3,21 @@
 Python script used to help generate the graphical datasheets.
 
 
-Step 1
+# Step 1
 download and install svgwrite
 https://bitbucket.org/mozman/svgwrite/downloads/
-& how to install http://www.schoolcoders.com/projects-inkscape-intro-2
 
 cd [downloaded Directory]/svgwrite-1.1.9
 python setup.py install
 
-Step 2
+# Step 2
 download and extract bkb_tagscript.py
 https://github.com/b2b/Graphical_Datasheets-bkb/archive/master.zip
 
-cd ~/Graphical_Datasheets-master
-python bkb_tagscript.py
+cd [downloaded Directory]/Graphical_Datasheets-master
+
+# python bkb_tagscript.py
+
 Datasheets/ATMEL2560/ATMEL2560-16AU
 
 
@@ -32,3 +33,5 @@ This repo includes the Python script used to help generate the graphical datashe
 
 For more information on the graphical datasheets check out our blog post on them.
 https://www.sparkfun.com/news/1947
+
+(how to install svgwrite http://www.schoolcoders.com/projects-inkscape-intro-2)
