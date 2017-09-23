@@ -25,6 +25,15 @@ Datasheets/ATMEL2560/ATMEL2560-16AU
 ```
 *End of File, the output is located at Datasheets/ATMEL2560/ATMEL2560-16AU.svg*
 
+# RAW Result and final example
+
+| Img from script        | Modified in inkscape           | 
+| ------------- |:-------------:| 
+| <img src="https://github.com/b2b/Graphical_Datasheets-bkb/blob/master/Datasheets/ATMEL2560/ATMEL2560-16AU.svg" width="240px">     | <img src="https://github.com/b2b/Graphical_Datasheets-bkb/blob/master/Datasheets/ATMEL2560/ATMEL2560-16AU_ok.svg" width="240px"> | 
+
+ 
+
+
 
 2017.09.23 modified version of Sparkfun Graphical Datasheets
 
