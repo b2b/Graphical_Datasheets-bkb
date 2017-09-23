@@ -1,4 +1,4 @@
-# Graphical Datasheets
+# Graphical Datasheets for MCUs from csv file
 
 Python script used to help generate the graphical datasheets.
 
