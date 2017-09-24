@@ -8029,8 +8029,8 @@
      transform="translate(0,-1197.6378)"
      sodipodi:insensitive="true">
     <image
-       sodipodi:absref="/home/bkb/github/Graphical_Datasheets-bkb/Datasheets/ATMEL2560/.././../Images/Atmega2560-TQFP-dokumentation-bkb.png"
-       xlink:href=".././../Images/Atmega2560-TQFP-dokumentation-bkb.png"
+       sodipodi:absref="../../Images/Atmega2560-TQFP-dokumentation-bkb.png"
+       xlink:href="../../Images/Atmega2560-TQFP-dokumentation-bkb.png"
        x="238.43886"
        y="1460.262"
        id="image2004"
