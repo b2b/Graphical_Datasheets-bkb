@@ -46,18 +46,21 @@ imagewidth=250
 imageheight=250
 indent = 1      # move text to the right
 adjust = -2     # move text down (negative for up)
-WantHeader = 1 # the first row from csv
+
 
 # "Theme"
-#            Name     Power    GND      Control   Arduino  Port     Analog
-#        PWM       Serial  ExtInt    PCInt     Misc    Misc2
+#   Name,           Power,        GND,      Arduino Digital,  Arduino Analog,
+#   Port,           Serial,       I2C/SPI,  PWM,              ADC,
+#   Ext Interrupt,  PC Interrupt, Misc,     Misc2,            extra
 # bkb added 2x blue
-tcolor   = ['white', 'red',   'black', 'yellow', 'green', 'blue',  'purple',
-        'yellow', 'grey', 'purple', 'orange', 'blue', 'blue', 'blue', 'blue']
+tcolor   = ['white', 'red',     'black',    '#FF0000',  '#000080', 
+            'black',  'navy',   'yellow',   'black',    'purple', 
+            'orange', 'orange', 'blue',     'blue',     'red']
 
 # bkb added 2x 0.1 for blue
-topacity = [ 0.3,     0.8,     0.9,     0.7,      0.3,     0.4,     0.4,
-         0.3,      0.3,    0.2,      0.5,      0.1,    0.1, 0.1,    0.1  ]
+topacity = [ 0.3,     0.6,        0.9,        1,        1,     
+             0.6 ,    0.8,        0.8,        0.3,      0.5,      
+             0.8,     0.4,        0.3,        0.1,      0.1  ]
 
 ################################################# FUNCTIONS ###################################################
 
@@ -82,10 +85,17 @@ def writeField(type, value, row, spot, direction, GrpName, GrpLineNameText, cell
     if color == 'white':  # white boxes get black outlines
         crect = 'black'
 
-    if color == 'black':  # don't write black-on-black
+    if (color == 'black' or color == '#000080' or color == '#FF0000' or color == 'navy'):  # don't write black-on-black
         ctext = 'white'
-
-    if (str(value)!=''):
+   
+    #if ( value!='' or value!=' '):
+    myString = str(value)
+    myString = myString.strip()
+    # finding nasty empty strings
+    #print ("myString: " + myString) 
+    #print [ord(c) for c in myString]
+    if myString:
+        #print ("myString: " + myString) 
         # Box
         #dwg.add(dwg.rect(
         #shapes.add(dwg.rect(
@@ -106,7 +116,7 @@ def writeField(type, value, row, spot, direction, GrpName, GrpLineNameText, cell
             #))
         GrpLineNameText.add(dwg.text(
             str(value), insert = (x + indent, y + height + adjust),
-            font_size = fontsize, font_family='Montserrat', fill = ctext
+            font_size = fontsize, font_family='Arial', font_weight='bold', fill = ctext
             ))
 
 
@@ -184,7 +194,7 @@ while (rawline!=""):
     dwg.save()
     break
   if (row>1): # don't build the header first row in csv file. I put it into footer
-    for i in range(0, len(line)-1): #go through total number of fields
+    for i in range(0, len(line)-1): #go through total number of fields      
         if(line[i]!="" and direction=='r'):        
           writeField(i,line[i],row, spot, direction, GrpLineName, GrpLineNameText, cellWidth) #call function to add that field to the svg file
           spot=spot+1 #move 'cursor' one spot to the right		
